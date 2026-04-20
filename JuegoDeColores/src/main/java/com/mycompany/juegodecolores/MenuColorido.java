@@ -28,6 +28,15 @@ public class MenuColorido extends javax.swing.JFrame {
         mapaColores.put("azul",     new java.awt.Color(30, 144, 255));
         mapaColores.put("negro",     new java.awt.Color(0, 0, 0));
         
+                mapaColores.put("blanco", new java.awt.Color(255, 255, 255));
+        mapaColores.put("morado", new java.awt.Color(128, 0, 128));
+        mapaColores.put("gris", new java.awt.Color(128, 128, 128));
+        mapaColores.put("cyan", new java.awt.Color(0, 255, 255));
+        mapaColores.put("marron", new java.awt.Color(139, 69, 19));
+        mapaColores.put("lima", new java.awt.Color(50, 255, 50));
+        mapaColores.put("magenta", new java.awt.Color(255, 0, 255));
+        mapaColores.put("turquesa", new java.awt.Color(64, 224, 208));
+
         // --- INICIO DE ESTILIZACIÓN ---
         this.getContentPane().setBackground(new java.awt.Color(45, 45, 45));
         
@@ -40,8 +49,8 @@ public class MenuColorido extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         
         // Estilizar botones
-        javax.swing.JButton[] botones = {amarillo, verde, rojo, rosa, naranja, azul,negro};
-        String[] nombres = {"amarillo", "verde", "rojo", "rosa", "naranja", "azul","negro"};
+        javax.swing.JButton[] botones = {amarillo, verde, rojo, rosa, naranja, azul, negro, blanco, morado, gris, cyan, marron, lima, magenta, turquesa};
+        String[] nombres = {"amarillo", "verde", "rojo", "rosa", "naranja", "azul", "negro", "blanco", "morado", "gris", "cyan", "marron", "lima", "magenta", "turquesa"};
         for (int i = 0; i < botones.length; i++) {
             botones[i].setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 16));
             botones[i].setFocusPainted(false);
@@ -58,6 +67,16 @@ public class MenuColorido extends javax.swing.JFrame {
         rojo.setForeground(java.awt.Color.WHITE);
         azul.setForeground(java.awt.Color.WHITE);
         negro.setForeground(java.awt.Color.WHITE);
+        
+        blanco.setForeground(java.awt.Color.BLACK);
+        morado.setForeground(java.awt.Color.WHITE);
+        gris.setForeground(java.awt.Color.BLACK);
+        cyan.setForeground(java.awt.Color.BLACK);
+        marron.setForeground(java.awt.Color.WHITE);
+        lima.setForeground(java.awt.Color.BLACK);
+        magenta.setForeground(java.awt.Color.WHITE);
+        turquesa.setForeground(java.awt.Color.BLACK);
+
         // --- FIN DE ESTILIZACIÓN ---
     }
     
@@ -120,6 +139,14 @@ public class MenuColorido extends javax.swing.JFrame {
         naranja = new javax.swing.JButton();
         azul = new javax.swing.JButton();
         negro = new javax.swing.JButton();
+        blanco = new javax.swing.JButton();
+        morado = new javax.swing.JButton();
+        gris = new javax.swing.JButton();
+        cyan = new javax.swing.JButton();
+        marron = new javax.swing.JButton();
+        lima = new javax.swing.JButton();
+        magenta = new javax.swing.JButton();
+        turquesa = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -174,31 +201,112 @@ public class MenuColorido extends javax.swing.JFrame {
             }
         });
 
+        blanco.setText("Blanco");
+        blanco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                blancoActionPerformed(evt);
+            }
+        });
+
+        morado.setText("Morado");
+        morado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                moradoActionPerformed(evt);
+            }
+        });
+
+        gris.setText("Gris");
+        gris.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                grisActionPerformed(evt);
+            }
+        });
+
+        cyan.setText("Cyan");
+        cyan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cyanActionPerformed(evt);
+            }
+        });
+
+        marron.setText("Marron");
+        marron.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                marronActionPerformed(evt);
+            }
+        });
+
+        lima.setText("Lima");
+        lima.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limaActionPerformed(evt);
+            }
+        });
+
+        magenta.setText("Magenta");
+        magenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                magentaActionPerformed(evt);
+            }
+        });
+
+        turquesa.setText("Turquesa");
+        turquesa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                turquesaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(130, 130, 130)
-                .addComponent(MostrarLista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(rosa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(amarillo, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(verde, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(naranja, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(rojo, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
-                        .addComponent(negro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(azul, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(59, Short.MAX_VALUE))
+                        .addGap(130, 130, 130)
+                        .addComponent(MostrarLista, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(rosa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(amarillo, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
+                                .addGap(27, 27, 27)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(verde, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(naranja, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(34, 34, 34)
+                                .addComponent(cyan)
+                                .addGap(47, 47, 47)
+                                .addComponent(marron)))
+                        .addGap(28, 28, 28)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(azul, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(blanco))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(rojo, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lima))
+                                .addGap(37, 37, 37)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(magenta)
+                                    .addComponent(negro, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(52, 52, 52)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(morado)
+                                    .addComponent(gris)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(42, 42, 42)
+                                .addComponent(turquesa)))
+                        .addGap(0, 84, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,13 +323,29 @@ public class MenuColorido extends javax.swing.JFrame {
                         .addGap(52, 52, 52)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(amarillo, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(negro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(naranja, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rosa, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(azul, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(negro, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(morado)))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(blanco)
+                            .addComponent(gris)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(azul, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(naranja, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rosa, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(80, 80, 80)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cyan)
+                            .addComponent(marron)
+                            .addComponent(lima)
+                            .addComponent(magenta)
+                            .addComponent(turquesa))))
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         pack();
@@ -294,10 +418,50 @@ public class MenuColorido extends javax.swing.JFrame {
         });
     }
 
+    
+    private void blancoActionPerformed(java.awt.event.ActionEvent evt) {
+        procesarBoton("blanco", blanco);
+    }
+    
+    private void moradoActionPerformed(java.awt.event.ActionEvent evt) {
+        procesarBoton("morado", morado);
+    }
+    
+    private void grisActionPerformed(java.awt.event.ActionEvent evt) {
+        procesarBoton("gris", gris);
+    }
+    
+    private void cyanActionPerformed(java.awt.event.ActionEvent evt) {
+        procesarBoton("cyan", cyan);
+    }
+    
+    private void marronActionPerformed(java.awt.event.ActionEvent evt) {
+        procesarBoton("marron", marron);
+    }
+    
+    private void limaActionPerformed(java.awt.event.ActionEvent evt) {
+        procesarBoton("lima", lima);
+    }
+    
+    private void magentaActionPerformed(java.awt.event.ActionEvent evt) {
+        procesarBoton("magenta", magenta);
+    }
+    
+    private void turquesaActionPerformed(java.awt.event.ActionEvent evt) {
+        procesarBoton("turquesa", turquesa);
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel MostrarLista;
     private javax.swing.JButton amarillo;
     private javax.swing.JButton azul;
+    private javax.swing.JButton blanco;
+    private javax.swing.JButton morado;
+    private javax.swing.JButton gris;
+    private javax.swing.JButton cyan;
+    private javax.swing.JButton marron;
+    private javax.swing.JButton lima;
+    private javax.swing.JButton magenta;
+    private javax.swing.JButton turquesa;
     private javax.swing.JButton naranja;
     private javax.swing.JButton negro;
     private javax.swing.JButton rojo;

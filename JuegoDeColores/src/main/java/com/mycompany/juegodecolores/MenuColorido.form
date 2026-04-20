@@ -24,31 +24,68 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
-              <Component id="MostrarLista" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="rosa" max="32767" attributes="0"/>
-                  <Component id="amarillo" pref="100" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="verde" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                  <Component id="naranja" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="rojo" min="-2" pref="91" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                      <Component id="negro" min="-2" pref="81" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                      <Component id="MostrarLista" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="azul" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="rosa" max="32767" attributes="0"/>
+                                  <Component id="amarillo" pref="100" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="verde" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="naranja" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Component id="cyan" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                              <Component id="marron" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="azul" min="-2" pref="91" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="blanco" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="rojo" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <Component id="lima" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="magenta" min="-2" max="-2" attributes="0"/>
+                                  <Component id="negro" min="-2" pref="81" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="morado" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gris" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="turquesa" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="84" max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="59" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -69,17 +106,39 @@
                       <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="amarillo" min="-2" pref="121" max="-2" attributes="0"/>
-                          <Component id="negro" alignment="1" min="-2" pref="121" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                              <Component id="negro" alignment="3" min="-2" pref="121" max="-2" attributes="0"/>
+                              <Component id="morado" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="36" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="naranja" alignment="3" min="-2" pref="101" max="-2" attributes="0"/>
-                  <Component id="rosa" alignment="3" min="-2" pref="101" max="-2" attributes="0"/>
-                  <Component id="azul" alignment="3" min="-2" pref="101" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="blanco" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="gris" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="azul" alignment="3" min="-2" pref="101" max="-2" attributes="0"/>
+                          <Component id="naranja" alignment="3" min="-2" pref="101" max="-2" attributes="0"/>
+                          <Component id="rosa" alignment="3" min="-2" pref="101" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cyan" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="marron" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lima" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="magenta" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="turquesa" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace pref="122" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -144,6 +203,70 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="negroActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="blanco">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Blanco"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="blancoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="morado">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Morado"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="moradoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="gris">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gris"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="grisActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cyan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cyan"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cyanActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="marron">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Marron"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="marronActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="lima">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lima"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="limaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="magenta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Magenta"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="magentaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="turquesa">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Turquesa"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="turquesaActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
